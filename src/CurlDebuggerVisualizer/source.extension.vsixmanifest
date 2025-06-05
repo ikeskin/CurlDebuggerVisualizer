@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Identifier Id="CurlDebuggerVisualizer">
+    <Name>Curl Debugger Visualizer</Name>
+    <Author>OpenAI</Author>
+    <Version>1.0</Version>
+    <Description xml:space="preserve">Displays an HttpResponseMessage's request as a cURL command.</Description>
+    <SupportedProducts>
+      <VisualStudio Version="17.0">
+        <Edition>Community</Edition>
+        <Edition>Professional</Edition>
+        <Edition>Enterprise</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <Content>
+      <CustomExtension Type="DebuggerVisualizer">CurlDebuggerVisualizer.dll</CustomExtension>
+    </Content>
+  </Identifier>
+</Vsix>
