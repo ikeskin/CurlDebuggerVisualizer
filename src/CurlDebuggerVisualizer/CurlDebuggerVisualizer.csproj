@@ -17,5 +17,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest" />
-  </ItemGroup>
+  </PropertyGroup>
 </Project>
