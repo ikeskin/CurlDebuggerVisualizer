@@ -5,6 +5,12 @@ This repository contains a Visual Studio debugger visualizer that displays the
 
 ## Usage
 
+
+1. Build the `CurlDebuggerVisualizer` project to produce a `.vsix` package.
+2. Install the generated `CurlDebuggerVisualizer.vsix` by double-clicking it or
+   using the `Extensions > Manage Extensions` dialog in Visual Studio 2022 or
+   newer.
+=======
 1. Build the `CurlDebuggerVisualizer` project.
 2. Copy the generated `CurlDebuggerVisualizer.dll` into the Visual Studio
    visualizers directory (e.g., `%USERPROFILE%\Documents\Visual Studio 2022\Visualizers`).
