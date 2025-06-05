@@ -4,6 +4,19 @@
     <AssemblyName>CurlDebuggerVisualizer</AssemblyName>
     <RootNamespace>CurlDebuggerVisualizer</RootNamespace>
     <OutputType>Library</OutputType>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+    <VsixContainer>true</VsixContainer>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.DebuggerVisualizers" Version="17.0.0" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.8.10" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net472" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source.extension.vsixmanifest" />
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.DebuggerVisualizers" Version="17.0.0" />
