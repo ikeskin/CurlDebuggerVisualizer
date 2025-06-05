@@ -17,5 +17,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest" />
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.DebuggerVisualizers" Version="17.0.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Windows.Forms" Version="4.7.0" />
   </ItemGroup>
 </Project>
