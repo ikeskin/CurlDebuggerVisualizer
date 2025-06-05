@@ -1,15 +1,15 @@
 # CurlDebuggerVisualizer
 
-This repository contains a Visual Studio debugger visualizer that displays the
-`HttpRequestMessage` associated with an `HttpResponseMessage` in cURL format.
+This repository contains a Visual Studio debugger visualizer that displays the `HttpRequestMessage` associated with an `HttpResponseMessage` in cURL format.
 
-## Usage
+## Building
 
-1. Build the `CurlDebuggerVisualizer` project.
-2. Copy the generated `CurlDebuggerVisualizer.dll` into the Visual Studio
-   visualizers directory (e.g., `%USERPROFILE%\Documents\Visual Studio 2022\Visualizers`).
-3. While debugging, use the magnifier icon next to an `HttpResponseMessage` to
-   view the request as a cURL command.
+Run `dotnet build` from the repository root to generate the extension. This command produces a `CurlDebuggerVisualizer.vsix` file.
 
-The visualizer converts the request method, URL, headers and body into a cURL
-command that can be pasted into a terminal for troubleshooting.
+If you prefer not to build the project yourself, download the VSIX from the releases page of this repository.
+
+## Installation and Usage
+
+Install the VSIX in Visual Studio. When debugging an `HttpResponseMessage`, use the magnifier icon to view the request as a cURL command.
+
+The visualizer converts the request method, URL, headers and body into a cURL command that can be pasted into a terminal for troubleshooting.
